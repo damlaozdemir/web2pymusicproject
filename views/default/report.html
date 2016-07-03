@@ -1,0 +1,37 @@
+
+ <div>
+  <p>
+Adapting our template:
+1-We put our templatemo_style.css to static/css
+2-We moved our index.html to views/default
+3-We included our URL to template.html  by calling "{{=URL('static','css/templatemo_style.css')}}"
+4-We included our index.html to template.html 
+5-For every html pages we created, at the top we included our template by calling {{extend 'default/template.html'}}
+ </p>
+  <p>
+Web2py’s DAL:
+1-We edited db.py by creating our tables.
+2-We included 5 tables which are "users","Songdata","song","comments","singers".
+3-In our default.py and user.py we defined some functions that get from and put data to our tables.
+4-We used SQLgrid to form our forms. For instance; addsong, addalbum.
+ </p>
+  <p>
+Dynamic pages:
+Before we were getting datas from our dictionaries. Now we changed it to get data from database.(Photos, NewReleases, Albums, Song)
+ </p>
+User management:
+1-We made user.py that controls user function ie. signin, signup and logout.
+2-We formed a form for signin and signup by using form function from database.
+3-We allowed users who are logged in some functionalities like displaying music and commenting albums by using session.user function.
+
+Using an HTML table:
+We created an html table to show top songs in our top.html page. And we gave some opportunities to people who are logged in like accessing table elements directly(e.g song names, and album names)
+
+Forms:
+We created signin and signup forms for the user interface.
+We also created the a text place for the comments.
+We created forms for adding and deleting songs and albums for admin.
+
+Additional DB table:
+We made relations between the song table and the Songsdata table since Songsdata holds all album information about the songs and another relation between comments table to users and the songs they comment on.
+ </div>

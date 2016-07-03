@@ -1,0 +1,42 @@
+{{extend 'default/template.html'}}
+
+<table border="1" style="width:100%">
+  <th>Rating</th>
+  <th>Song Name</th>
+  <th>Album</th>
+  <th>Artist</th>
+  <th>Relase Year</th>
+  <tr>
+    <td>1</td>
+	{{if session.user:}}
+    <td><a href='/MusicProject/default/play/3'>Waiting For Love</a></td> 
+	{{else:}}
+	<td>Waiting For Love</td>
+	{{pass}}
+	{{pass}}
+	<td><a href='/MusicProject/default/song/4'>Stories</a></td> 
+	<td>Avicii</td>
+	<td>2015</td>
+  </tr>
+  <tr>
+    <td>2</td>
+	{{if session.user:}}
+    <td><a href='/MusicProject/default/play/2'>Where Have You Been</a></td> 
+	{{else:}}
+	<td >Where Have You Been</td>
+	{{pass}}
+	{{pass}}
+    <td rowspan="2"><a href='/MusicProject/default/song/1'>Talk That Talk</a></td> 
+	<td rowspan="2">Rihanna</td>
+	<td rowspan="2">2003</td>
+  </tr>
+  <tr>
+    <td>3</td>
+	{{if session.user:}}
+    <td><a href='/MusicProject/default/play/1'>You da One</a></td> 
+	{{else:}}
+	<td>You da One</td>
+	{{pass}}
+	{{pass}}
+  </tr>
+</table>

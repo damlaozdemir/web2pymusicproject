@@ -1,0 +1,15 @@
+Äcgluon.globals
+Session
+q}qUuserqcpydal.objects
+Row
+q}q(UusernameqUdamlaqUSurnameqNUNameq	NUupdate_recordq
+cpydal.helpers.classes
+RecordUpdater
+q)Åq}q(Ucolsetqh}q(hhhNh	Nh
+hUcommentsqcpydal.objects
+LazySet
+q)Åq}q(U	tablenameqUcommentsqUdbqcpydal.base
+DAL_unpickler
+qU 8f8c2c36867443c686d3bcdf72be5bc3qÖRqU	fieldnameqUusersidqUidqäubUidqäUpasswordqU 202cb962ac59075b964b07152d234b70qUemailq Udamla@gmail.comq!Udelete_recordq"cpydal.helpers.classes
+RecordDeleter
+q#)Åq$}q%(hUusersq&hhhäubuÖRq'hh&hhhäubhhhähhh h!h"h$uÖRq(sÖRq(.

@@ -1,0 +1,41 @@
+{{extend 'default/template.html'}}
+<div>
+{{if song:}}
+<p> Album name: {{=song['Album']}}</p> 
+<img width=150 height="auto" src='{{=URL('uploads',args=song.albumimg)}}'>
+<p> Release Year:{{=song['releaseyear']}}</p>
+
+<ul>
+<p>Songs in this album: </p>
+{{if songs:}}
+
+{{for s in songs:}}
+{{if session.user:}}
+ <li><a href='/MusicProject/default/play/{{=s.id}}'>{{=s.songname}}</a></li>
+{{else:}}
+ <li>{{=s.songname}}</li>
+ {{pass}}
+ {{pass}}
+ {{pass}}
+ {{pass}}
+</ul>
+
+{{if session.user:}}
+{{if song:}}
+ <form method="post" action="/MusicProject/default/addcomment/{{=song['id']}}{{pass}}">
+                  <div class="form_row"><textarea rows='20' col='70' name='text' ></textarea></div>
+             
+                    <input class="button" type="submit" name="Submit" value="send my comment" /> 
+					
+   </form>
+ {{pass}}
+
+ {{if comments:}}
+ {{for x in comments:}}	
+	<div class='border:1px solid black' >
+	{{=x.users.username}} {{=x.comments.datecomment}} : {{=x.comments.comments}}
+	</div>
+ {{pass}}
+ {{pass}}
+
+</div>

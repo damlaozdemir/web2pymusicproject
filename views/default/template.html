@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="{{=URL('static','css/templatemo_style.css')}}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="templatemo_container">
+
+	<div id="templatemo_header">
+    	<div id="templatemo_title">
+            <div id="templatemo_sitetitle">Music <span>Store</span></div>
+        </div>
+    </div>
+
+	<div id="templatemo_banner">
+       	<div id="templatemo_banner_text">
+            <div id="banner_title">Welcome To Music Store</div>
+            <p>
+			<h3>
+			Welcome to the online home of the music department at MSKU University. This website is done by Mugla university students Doreen and Damla from the Computer department and we 
+			hope that you like it and if you need to reach us our contacts are as in the about page.</h3></p>
+            
+    	</div>
+	</div>
+    
+    <div id="templatemo_menu">
+     	<ul>
+			<li><a href="/MusicProject/default/index" >Main Page</a></li>
+			<li><a href="/MusicProject/default/NewReleases">New Releases</a></li>
+            <li><a href="/MusicProject/default/music">Albums</a></li>
+            <li><a href="/MusicProject/default/top">Top 10 Songs</a></li>
+            <li><a href="/MusicProject/default/bio">Biography</a></li>
+            <li><a href="/MusicProject/default/photos">Photos</a></li>
+            <li><a href="/MusicProject/default/events">Events</a></li>
+            <li><a href="/MusicProject/default/about" class="lastmenu">About Us</a></li>
+        </ul>
+    </div>
+
+    <div id="templatemo_content">
+    	<div id="templatemo_left_column">
+            <div class="left_col_box">
+			</div>
+			<div class="login">
+			
+			<h2>Customer Login</h2>
+            <div class="left_col_box">
+			{{if not session.user:}}
+				
+                <form method="get" action="/MusicProject/user/signin">
+                  <div class="form_row"><label>Username</label><input class="inputfield" name="username" type="text" id="username"/></div>
+                    <div class="form_row"><label>Password</label><input class="inputfield" name="pw" type="password" id="password"/></div>
+                    <input class="button" type="submit" name="Submit" value="Sign in" /> 
+					
+                </form>
+				<form action="/MusicProject/user/signup">
+				<input class="button" type="submit" name="Submit" value="Sign up" /> 
+				</form>
+						{{if session.error:}}
+	{{=session.error}}
+	{{session.error=None}}
+{{pass}}
+
+ {{else:}}
+ Welcome {{=session.user.username}} !
+  <form method="get" action="/MusicProject/user/logout">
+ <input class="button" type="submit" name="Submit" value="Log out " /> 
+ </form>
+ {{pass}}
+
+			</div>
+			</div>
+            <h2>News !!!</h2>
+            <div class="left_col_box">
+                <div class="blog_box">
+                    <h3><a href="#">Rihanna Rolls Out “Anti World Tour” Schedule!</a></h3>
+                    Mark your calendars, as Rihanna will begin selling tickets for her forthcoming “Anti World Tour” on December 3rd!
+On Monday (November 23) the “We Found Love” lady announced she’s hitting the road on February 26th, 2016 along with supporting acts Travis Scott, The Weeknd and Big Sean. <a href="#"><span>Admin</span></a> in <a href="#"><span>Videos</span></a><br />
+				</div>
+                
+                <div class="more_button"><a href="#">View All</a></div>                                              
+
+			</div>
+		</div>
+        <div id="templatemo_right_column">
+
+		{{include}}
+		</div>
+    </div>
+	<div id="templatemo_footer">
+        <a href="#">Home</a> | <a href="#">Releases</a> | <a href="#">Music</a> | <a href="#">Top10</a> | <a href="#">Biography</a> | <a href="#">Photos</a>| <a href="#">Events</a> | <a href="#">About</a> | <a href="#">Contact</a><br />
+        Copyright © <a href="#"><strong>MSKU</strong></a>
+	</div>
+</div>
+  <!--  Designed by w w w . t e m p l a t e m o . c o m  --> 
+<!-- templatemo 047 music -->
+<!-- 
+Music Template 
+http://www.templatemo.com/preview/templatemo_047_music 
+-->
+</body>
+</html>

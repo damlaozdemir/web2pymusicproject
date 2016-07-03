@@ -1,0 +1,385 @@
+(dp1
+S'output'
+p2
+S'missing "pass" in view'
+p3
+sS'layer'
+p4
+S'ParserContainer'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\\r\\n<html xmlns="http://www.w3.org/1999/xhtml">\\r\\n<head>\\r\\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\\r\\n<meta name="keywords" content="" />\\r\\n<meta name="description" content="" />\\r\\n<link href="\', escape=False)\nresponse.write(URL(\'static\',\'css/templatemo_style.css\'))\nresponse.write(\'" rel="stylesheet" type="text/css" />\\r\\n</head>\\r\\n<body>\\r\\n\\r\\n<div id="templatemo_container">\\r\\n\\r\\n\\t<div id="templatemo_header">\\r\\n    \\t<div id="templatemo_title">\\r\\n            <div id="templatemo_sitetitle">Music <span>Layout</span></div>\\r\\n        </div>\\r\\n    </div>\\r\\n\\r\\n\\t<div id="templatemo_banner">\\r\\n       \\t<div id="templatemo_banner_text">\\r\\n            <div id="banner_title">Welcome To Music Store</div>\\r\\n            <p>\\r\\n\\t\\t\\t<h3>\\r\\n\\t\\t\\tWelcome to the online home of the music department at MSKU University. This website is done by Mugla university students Doreen and Damla from the Computer department and we \\r\\n\\t\\t\\thope that you like it and if you need to reach us our contacts are as in the about page.  <3 <3 <3 <3  </h3></p>\\r\\n            <div class="more_button"><a href="#">Read More</a></div>\\r\\n    \\t</div>\\r\\n\\t</div>\\r\\n    \\r\\n    <div id="templatemo_menu">\\r\\n     \\t<ul>\\r\\n\\t\\t\\t<li><a href="/MusicProject/default/index" class="current">Main Page</a></li>\\r\\n\\t\\t\\t<li><a href="/MusicProject/default/NewReleases">New Releases</a></li>\\r\\n            <li><a href="/MusicProject/default/music">Albums</a></li>\\r\\n            <li><a href="/MusicProject/default/top">Top 10 Songs</a></li>\\r\\n            <li><a href="/MusicProject/default/bio">Biography</a></li>\\r\\n            <li><a href="/MusicProject/default/photos">Photos</a></li>\\r\\n            <li><a href="/MusicProject/default/events">Events</a></li>\\r\\n            <li><a href="/MusicProject/default/about" class="lastmenu">About Us</a></li>\\r\\n        </ul>\\r\\n    </div>\\r\\n\\r\\n    <div id="templatemo_content">\\r\\n    \\t<div id="templatemo_left_column">\\r\\n            <div class="left_col_box">\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t\\t<div class="login">\\r\\n\\t\\t\\t\', escape=False)\nif not session.user:\n    response.write(\'\\r\\n\\t\\t\\t<h2>Customer Login</h2>\\r\\n            <div class="left_col_box">\\r\\n                <form method="get" action="/MusicProject/user/signin">\\r\\n                  <div class="form_row"><label>Username</label><input class="inputfield" name="username" type="text" id="username"/></div>\\r\\n                    <div class="form_row"><label>Password</label><input class="inputfield" name="pw" type="password" id="password"/></div>\\r\\n                    <input class="button" type="submit" name="Submit" value="login in" /> \\r\\n\\t\\t\\t\\t\\t\\r\\n                </form>\\r\\n\\t\\t\\t\\t<form action="/MusicProject/user/signup">\\r\\n\\t\\t\\t\\t<input class="button" type="submit" name="Submit" value="Sign up" /> \\r\\n\\t\\t\\t\\t</form>\\r\\n\\t\\t\\t\\t\\t\\t\', escape=False)\n    if session.error:\n        response.write(\'\\r\\n\\t\', escape=False)\n        response.write(session.error)\n        response.write(\'\\r\\n\\t\', escape=False)\n        session.error=None\n        response.write(\'\\r\\n\', escape=False)\n        pass\n    response.write(\'\\r\\n\\r\\n \', escape=False)\nelse:\n    response.write(\'\\r\\n \', escape=False)\n    response.write(session.user)\n    response.write(\'\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t\\t</div>\\r\\n            <h2>News !!!</h2>\\r\\n            <div class="left_col_box">\\r\\n                <div class="blog_box">\\r\\n                    <h3><a href="#">Rihanna Rolls Out \\xe2\\x80\\x9cAnti World Tour\\xe2\\x80\\x9d Schedule!</a></h3>\\r\\n                    Mark your calendars, as Rihanna will begin selling tickets for her forthcoming \\xe2\\x80\\x9cAnti World Tour\\xe2\\x80\\x9d on December 3rd!\\r\\nOn Monday (November 23) the \\xe2\\x80\\x9cWe Found Love\\xe2\\x80\\x9d lady announced she\\xe2\\x80\\x99s hitting the road on February 26th, 2016 along with supporting acts Travis Scott, The Weeknd and Big Sean. <a href="#"><span>Admin</span></a> in <a href="#"><span>Videos</span></a><br />\\r\\n\\t\\t\\t\\t</div>\\r\\n                <div class="blog_box">\\r\\n                    <h3><a href="#">Duis vitae velit sed dui</a></h3>\\r\\n                    Pellentesque vitae magna. Suspendisse vitae neque eget ante tristique vestibulum.<br />\\r\\n                    Posted by <a href="#"><span>Admin</span></a> in <a href="#"><span>Audios</span></a><br />\\r\\n                    20 December 2020\\r\\n\\t\\t\\t\\t</div>\\r\\n                <div class="blog_box">\\r\\n                    <h3><a href="#">Donec mollis aliquet ligula</a></h3>\\r\\n                    Suspendisse vitae neque eget ante tristique vestibulum.<br />\\r\\n                    Posted by <a href="#"><span>Admin</span></a> in <a href="#"><span>Samples</span></a><br />\\r\\n                    22 December 2020\\r\\n\\t\\t\\t\\t</div> \\r\\n                <div class="more_button"><a href="#">View All</a></div>                                              \\r\\n\\r\\n\\t\\t\\t</div>\\r\\n\\t\\t</div>\\r\\n        <div id="templatemo_right_column">\\r\\n\\r\\n\\t\\t\', escape=False)\n    response.write(\'\\r\\n<div class="templatemo_right_panel_fullwidth">\\r\\n\\t\\t\\t\\r\\n            \\t<h1>Subpage Title goes here</h1>\\r\\n\\t\\t\\t\\t\\t<div class="templatemo_right_panel_fullwidth_content">\\r\\n\\t\\t\\t\\t\\t\\r\\n                \\t<h3>Subtitle 1 goes here</h3>\\r\\n                    <img src="/MusicProject/static/images/image01(140x140).jpg" alt="image" /> \\r\\n                    <p>This is a free CSS website template provided by TemplateMo.com. Feel free to modify and use this layout for your websites.</p>\\r\\n    \\r\\n                    <p>\\r\\n    Lorem ipsum nunc quis sem dolor sit amet, consectetuer adipiscing elit. Nunc quis sem nec tellus blandit tincidunt. Duis mollis aliquet ligula. Maecenas adipiscing elementum vitae velit sed dui malesuada dignissim. Donec mollis aliquet ligula. </p>\\r\\n                    <p>Maecenas adipiscing elementum ipsum. Lorem ipsum nunc quis sem dolor sit amet, consectetuer adipiscing elit. Nunc quis sem nec tellus blandit tincidunt. Duis mollis aliquet ligula. </p>\\r\\n              </div> \\r\\n               \\r\\n                \\r\\n                <div class="templatemo_right_panel_fullwidth_content">\\r\\n                \\t<h3>Subtitle 2 goes here</h3>\\r\\n                    <img src="/MusicProject/static/images/image02(140x140).jpg" alt="image" /> \\r\\n                    <p>Nunc quis sem nec tellus blandit tincidunt. Duis mollis aliquet ligula. Maecenas adipiscing elementum vitae velit sed dui malesuada dignissim. Donec mollis aliquet ligula. Maecenas adipiscing elementum ipsum. </p>\\r\\n                    <p>Lorem ipsum nunc quis sem dolor sit amet, consectetuer adipiscing elit. Nunc quis sem nec tellus blandit tincidunt. Duis mollis aliquet ligula. Maecenas adipiscing elementum vitae velit sed dui malesuada dignissim. Donec mollis aliquet ligula. Maecenas adipiscing elementum ipsum. </p>\\r\\n              </div> \\r\\n                \\r\\n                <div class="templatemo_right_panel_fullwidth">\\r\\n                \\t<h1>W3C Validations</h1>\\r\\n                \\t<div class="templatemo_right_panel_fullwidth_content">\\r\\n                        <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" width="88" height="31" vspace="8" border="0" /></a>\\r\\n        <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"  src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" vspace="8" border="0" /></a>\\r\\n        \\t\\t\\t</div>\\r\\n                </div>                   \\r\\n            </div>\\r\\n\', escape=False)\n    response.write(\'\\r\\n\\t\\t</div>\\r\\n    </div>\\r\\n\\t<div id="templatemo_footer">\\r\\n        <a href="#">Home</a> | <a href="#">Releases</a> | <a href="#">Music</a> | <a href="#">Top10</a> | <a href="#">Biography</a> | <a href="#">Photos</a>| <a href="#">Events</a> | <a href="#">About</a> | <a href="#">Contact</a><br />\\r\\n        Copyright \\xc2\\xa9 <a href="#"><strong>MSKU</strong></a>\\r\\n\\t</div>\\r\\n</div>\\r\\n  <!--  Designed by w w w . t e m p l a t e m o . c o m  --> \\r\\n<!-- templatemo 047 music -->\\r\\n<!-- \\r\\nMusic Template \\r\\nhttp://www.templatemo.com/preview/templatemo_047_music \\r\\n-->\\r\\n</body>\\r\\n</html>\\r\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'gluon.rocket'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of SocketTimeout object>"
+p15
+sS'__str__'
+p16
+S"<method-wrapper '__str__' of SocketTimeout object>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of SocketTimeout object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of SocketTimeout object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'__init__'
+p26
+S"<method-wrapper '__init__' of SocketTimeout object>"
+p27
+sS'__setattr__'
+p28
+S"<method-wrapper '__setattr__' of SocketTimeout object>"
+p29
+sS'__reduce_ex__'
+p30
+S'<built-in method __reduce_ex__ of SocketTimeout object>'
+p31
+sS'__new__'
+p32
+S'<built-in method __new__ of type object>'
+p33
+sS'__format__'
+p34
+S'<built-in method __format__ of SocketTimeout object>'
+p35
+sS'__class__'
+p36
+S"<class 'gluon.rocket.SocketTimeout'>"
+p37
+sS'__doc__'
+p38
+S"'Exception for when a socket times out between requests.'"
+p39
+sS'__getitem__'
+p40
+S"<method-wrapper '__getitem__' of SocketTimeout object>"
+p41
+sS'__setstate__'
+p42
+S'<built-in method __setstate__ of SocketTimeout object>'
+p43
+sS'__getattribute__'
+p44
+S"<method-wrapper '__getattribute__' of SocketTimeout object>"
+p45
+sS'args'
+p46
+S"('Socket timed out before request.',)"
+p47
+sS'__subclasshook__'
+p48
+S'<built-in method __subclasshook__ of type object>'
+p49
+sS'__unicode__'
+p50
+S'<built-in method __unicode__ of SocketTimeout object>'
+p51
+sS'__delattr__'
+p52
+S"<method-wrapper '__delattr__' of SocketTimeout object>"
+p53
+sS'__repr__'
+p54
+S"<method-wrapper '__repr__' of SocketTimeout object>"
+p55
+sS'__hash__'
+p56
+S"<method-wrapper '__hash__' of SocketTimeout object>"
+p57
+ssS'evalue'
+p58
+S'Socket timed out before request.'
+p59
+sS'frames'
+p60
+(lp61
+(dp62
+S'file'
+p63
+S'C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py'
+p64
+sS'dump'
+p65
+(dp66
+S'self'
+p67
+S'<WSGIWorker(Thread-10, started daemon 2156)>'
+p68
+sS'conn'
+p69
+S'<gluon.rocket.Connection object>'
+p70
+sS'self.run_app'
+p71
+S'<bound method WSGIWorker.run_app of <WSGIWorker(Thread-10, started daemon 2156)>>'
+p72
+ssS'lnum'
+p73
+I1337
+sS'lines'
+p74
+(dp75
+I1332
+S'            # Enter connection serve loop'
+p76
+sI1333
+S'            while True:'
+p77
+sI1334
+S'                if __debug__:'
+p78
+sI1335
+S"                    self.err_log.debug('Serving a request')"
+p79
+sI1336
+S'                try:'
+p80
+sI1337
+S'                    self.run_app(conn)'
+p81
+sI1338
+S'                except:'
+p82
+sI1339
+S'                    exc = sys.exc_info()'
+p83
+sI1340
+S'                    handled = self._handleError(*exc)'
+p84
+sI1341
+S'                    if handled:'
+p85
+ssS'call'
+p86
+S'(self=<WSGIWorker(Thread-10, started daemon 2156)>)'
+p87
+sS'func'
+p88
+S'run'
+p89
+sa(dp90
+g63
+S'C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py'
+p91
+sg65
+(dp92
+S'self'
+p93
+S'<WSGIWorker(Thread-10, started daemon 2156)>'
+p94
+sS'self.environ'
+p95
+S"{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'HTTP_ACCEPT_ENCODING': 'gzip, deflate, sdch', 'HTTP_ACCEPT_LANGUAGE': 'tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE': 'adminLanguage=en-us; session_id_img_blog=127.0.0...ct=127.0.0.1-db789f13-7bdf-457e-acfb-63c2813e9355', 'HTTP_HOST': '127.0.0.1:8000', 'HTTP_REFERER': 'http://127.0.0.1:8000/MusicProject', 'HTTP_UPGRADE_INSECURE_REQUESTS': '1', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/...ML, like Gecko) Chrome/47.0.2526.80 Safari/537.36', ...}"
+p96
+sS'sock_file'
+p97
+S'<socket._fileobject object>'
+p98
+sS'environ'
+p99
+S'undefined'
+p100
+sS'self.build_environ'
+p101
+S'<bound method WSGIWorker.build_environ of <WSGIWorker(Thread-10, started daemon 2156)>>'
+p102
+sS'conn'
+p103
+S'<gluon.rocket.Connection object>'
+p104
+ssg73
+I1830
+sg74
+(dp105
+I1825
+S'        else:'
+p106
+sI1826
+S'            sock_file = conn.makefile(BUF_SIZE)'
+p107
+sI1827
+S''
+sI1828
+S'        try:'
+p108
+sI1829
+S'            # Read the headers and build our WSGI environment'
+p109
+sI1830
+S'            self.environ = environ = self.build_environ(sock_file, conn)'
+p110
+sI1831
+S''
+sI1832
+S'            # Handle 100 Continue'
+p111
+sI1833
+S"            if environ.get('HTTP_EXPECT', '') == '100-continue':"
+p112
+sI1834
+S"                res = environ['SERVER_PROTOCOL'] + ' 100 Continue\\r\\n\\r\\n'"
+p113
+ssg86
+S'(self=<WSGIWorker(Thread-10, started daemon 2156)>, conn=<gluon.rocket.Connection object>)'
+p114
+sg88
+S'run_app'
+p115
+sa(dp116
+g63
+S'C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py'
+p117
+sg65
+(dp118
+S'sock_file'
+p119
+S'<socket._fileobject object>'
+p120
+sS'self.read_request_line'
+p121
+S'<bound method WSGIWorker.read_request_line of <WSGIWorker(Thread-10, started daemon 2156)>>'
+p122
+sS'self'
+p123
+S'<WSGIWorker(Thread-10, started daemon 2156)>'
+p124
+sS'request'
+p125
+g100
+ssg73
+I1650
+sg74
+(dp126
+I1645
+S'                                      "wsgiorg.futures": executor.futures})'
+p127
+sI1646
+S''
+sI1647
+S'    def build_environ(self, sock_file, conn):'
+p128
+sI1648
+S'        """ Build the execution environment. """'
+p129
+sI1649
+S'        # Grab the request line'
+p130
+sI1650
+S'        request = self.read_request_line(sock_file)'
+p131
+sI1651
+S''
+sI1652
+S'        # Copy the Base Environment'
+p132
+sI1653
+S'        environ = self.base_environ.copy()'
+p133
+sI1654
+S''
+ssg86
+S'(self=<WSGIWorker(Thread-10, started daemon 2156)>, sock_file=<socket._fileobject object>, conn=<gluon.rocket.Connection object>)'
+p134
+sg88
+S'build_environ'
+p135
+sa(dp136
+g63
+S'C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py'
+p137
+sg65
+(dp138
+S'global SocketTimeout'
+p139
+S"<class 'gluon.rocket.SocketTimeout'>"
+p140
+ssg73
+I1401
+sg74
+(dp141
+I1396
+S''
+sI1397
+S'                d = sock_file.readline()'
+p142
+sI1398
+S'                if PY3K:'
+p143
+sI1399
+S"                    d = d.decode('ISO-8859-1')"
+p144
+sI1400
+S'        except socket.timeout:'
+p145
+sI1401
+S"            raise SocketTimeout('Socket timed out before request.')"
+p146
+sI1402
+S'        except TypeError:'
+p147
+sI1403
+S'            raise SocketClosed('
+p148
+sI1404
+S"                'SSL bug caused closure of socket.  See '"
+p149
+sI1405
+S'                \'"https://groups.google.com/d/topic/web2py/P_Gw0JxWzCs".\')'
+p150
+ssg86
+S'(self=<WSGIWorker(Thread-10, started daemon 2156)>, sock_file=<socket._fileobject object>)'
+p151
+sg88
+S'read_request_line'
+p152
+sasS'pyver'
+p153
+S'Python 2.7.9: C:\\Users\\w\xfdn 7\\Desktop\\web2py\\web2py.exe (prefix: )'
+p154
+sS'etype'
+p155
+S"<class 'gluon.rocket.SocketTimeout'>"
+p156
+sS'date'
+p157
+S'Tue Dec 15 17:25:25 2015'
+p158
+sS'locals'
+p159
+(dp160
+S'sock_file'
+p161
+S'<socket._fileobject object>'
+p162
+sS'self'
+p163
+S'<WSGIWorker(Thread-10, started daemon 2156)>'
+p164
+sssS'traceback'
+p165
+S'Traceback (most recent call last):\n  File "C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py", line 1337, in run\n    self.run_app(conn)\n  File "C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py", line 1830, in run_app\n    self.environ = environ = self.build_environ(sock_file, conn)\n  File "C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py", line 1650, in build_environ\n    request = self.read_request_line(sock_file)\n  File "C:\\Users\\w\xfdn 7\\Desktop\\web2py\\gluon\\rocket.py", line 1401, in read_request_line\n    raise SocketTimeout(\'Socket timed out before request.\')\nSocketTimeout: Socket timed out before request.\n'
+p166
+s.

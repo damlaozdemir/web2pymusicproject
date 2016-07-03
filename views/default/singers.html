@@ -1,0 +1,6 @@
+{{extend 'template.html'}}
+<ul> 
+{{for (name, cnt) in authors.items():}}
+   <li>{{=name}} ({{=cnt}} books)</li>
+{{pass}}   
+</ul>

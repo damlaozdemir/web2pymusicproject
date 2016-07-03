@@ -1,0 +1,28 @@
+{{extend 'default/template.html'}}
+<h1>
+Newly Released Albums
+</h1>
+
+<div>
+
+{{for s in news:}}
+	
+	
+	<ul class='newreleases'>
+	<h3>{{=s['Singer']}} - {{=s['Album']}}</h3>
+	{{if session.user:}}
+	<p><a href="/MusicProject/default/song/{{=s['id']}}"><img width=150 height="auto" src='{{=URL('uploads',args=s.albumimg)}}'/></a></p>
+	{{else:}}
+	<img width=150 height="auto" src='{{=URL('uploads',args=s.albumimg)}}'/>
+	{{pass}}
+	
+	</ul>
+	
+	
+{{pass}}	
+	
+
+</div>
+
+
+

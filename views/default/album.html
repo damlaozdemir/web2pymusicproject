@@ -1,0 +1,11 @@
+{{extend 'default/template.html'}}
+
+List of Albums Available In Dictionary
+<ul>
+{{for s in allsongs:}}
+	<a href="/MusicProject/default/song/{{=s['id']}}"><li><p>src = "/MusicProject/static/images/{{=s['albumimg']}}</p></li></a>
+	<p>{"Released Year:"{=s['year']}} </p>
+{{pass}}
+
+</ul>
+

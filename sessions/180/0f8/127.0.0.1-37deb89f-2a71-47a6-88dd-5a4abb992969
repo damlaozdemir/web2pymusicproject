@@ -1,0 +1,14 @@
+Äcgluon.globals
+Session
+q}q(U!_web2py_grid_referrer_web2py_gridqU/MusicProject/default/addsingerqU_formkey[default]q]q(U$157a22aa-f0a0-486d-aaea-483c8e7efae7qU$1842b5d2-0ab8-407e-bf1a-f4db59aa972cqU$95d5cbc5-631a-4a78-b7c6-2d82e4a20c62q	U$cb22275b-d1ff-4ad2-8ce0-ee51a88e9951q
+U$4fdce4e3-c460-4577-a3c7-91a86f7e2259qU$5e343bdf-0ef2-47a1-9571-3c1db0eeee85qU$0d1202d7-5d3b-483b-bbc9-9460eba59a11qU$91cf058a-a708-48f7-b2e2-c245e1f1b7a0qU$8f996cb3-a485-458d-8a44-e4a6aa5d962cqU$9a24775b-7acc-4ed9-b0cf-19ca41002c5bqeU_formkey[web2py_grid]q]q(U$f731e263-a30b-41d5-b969-3aa9c5d5d40cqU$38c7af3c-2072-4101-a39b-e657ab309824qU$a94cc25f-fa11-4873-b8f3-e33a7f2685b7qU$db59c57c-5afd-4677-8038-294cb5c62dc0qU$b04cbe1b-a666-449c-a8ec-ec41b20387beqU$6a3b9968-1587-45de-8cb3-428733e3190fqU$ef17e934-2649-4a88-9427-63a237764dd2qU$0d276848-4f4f-4b9d-b276-8171e45f48c9qU$db0e3ed8-c8cd-4ea0-98ee-7c9422851c74qeUuserqcpydal.objects
+Row
+q}q(UusernameqUcanq USurnameq!NUNameq"NUupdate_recordq#cpydal.helpers.classes
+RecordUpdater
+q$)Åq%}q&(Ucolsetq'h}q((hh h!Nh"Nh#h%Ucommentsq)cpydal.objects
+LazySet
+q*)Åq+}q,(U	tablenameq-UcommentsUdbq.cpydal.base
+DAL_unpickler
+q/U 8f8c2c36867443c686d3bcdf72be5bc3q0ÖRq1U	fieldnameq2UusersidUidq3äubUidq4äUpasswordq5U 81dc9bdb52d04dc20036dbd8313ed055q6Uemailq7Ucan@gmail.comq8Udelete_recordq9cpydal.helpers.classes
+RecordDeleter
+q:)Åq;}q<(h-Uusersq=h.h1h3äubuÖRh-h=h.h1h3äubh)h+h4äh5h6h7h8h9h;uÖRq>uÖRq?.
